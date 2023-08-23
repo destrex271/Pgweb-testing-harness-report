@@ -5,7 +5,7 @@ This is the project report for the PGWeb Testing Harness Suite Developed for the
 ## About Project
 This project is an automated testing harness suite for the <a href="https://www.postgresql.org">official PostgreSQL website</a>. Previously, many bugs were encountered whenever new changes were introduced to the website. These bugs had to be manually debugged, which could take hours of trial and error to identify the root cause. To address this problem, this testing suite was developed under the Google Summer of Code 2023 program. 
 
-### How does it work?
+### Desired Functionality
 
 While developing this suite, we had three major requirements:
  - Keep the testing suite codebase completely seperate from the <a href="https://git.postgresql.org/gitweb/?p=pgweb.git;a=summary">pgweb codebase</a>
@@ -136,7 +136,7 @@ If you are generating any extra reports kindly add them in the workflow to be up
 Once the tests are run, the logs are analyzed by <a href="https://github.com/destrex271/pgweb-testing-harness/blob/main/src/utils/process_logs.py">this script</a>. If any tests are failed, an email is prepared with the respective reports and a link to the action run is also added in the content. This email is then to the concerned authorities.
 
 
-## Features that were left/ Features that can be added later
+## Future Work
 
 - A Web interface to view individual reports for each build.
 - Persistence of artifacts by storing them in a database or storage service to create a log archive.
